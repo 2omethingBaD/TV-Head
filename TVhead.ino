@@ -11,6 +11,7 @@
 #define button_three_pin 5
 #define button_four_pin 6
 #define button_five_pin 7
+#define ind_pin 8
 #define BAUDRATE 115200
 #define num_led 126
 
@@ -190,15 +191,23 @@ void onB5Press()
 {
   pattern_counter = 5;
 }
+void onB5DPress()
+{
+  pattern_counter = 55;
+}
 
 
-void setup(){                
+void setup(){     
+  pinMode(ind_pin, OUTPUT);           
   FastLED.addLeds<WS2812B, led_pin, GRB>(leds, num_led);
   FastLED.setMaxPowerInVoltsAndMilliamps(5, 500);
   Serial.begin(BAUDRATE);
 
   button_one.begin();
   button_two.begin();
+  button_three.begin();
+  button_four.begin();
+  button_five.begin();
   button_one.onPressed(onB1Press);
   button_one.onSequence(2, 2000, onB1DPress);
   button_two.onPressed(onB2Press);
@@ -206,10 +215,12 @@ void setup(){
   button_three.onPressed(onB3Press);
   button_four.onPressed(onB4Press);
   button_five.onPressed(onB5Press);
+  button_five.onSequence(2, 2000, onB5DPress);
 }
 
 
 void loop(){
+  digitalWrite(ind_pin, HIGH);
   button_one.read();
   button_two.read();
   button_three.read();
@@ -236,7 +247,10 @@ void loop(){
       UwUEye();
       break;
     case 5:
-      closedEye();
+      off();
+      break;
+    case 55:
+      on();
       break;
   }
 }
@@ -298,17 +312,27 @@ void UwUEye(){
   FastLED.delay(80);
   }
 }
-//static closed eye
-void closedEye(){
+//screen off
+void off(){
   while(pattern_counter == 5){
-    for(int i = 0; i < num_led; i++){
-    leds[i] = pgm_read_dword(&(ledarray4[i]));
+    for(int i = 0; i<num_led; i++) leds[i] = CRGB(0,0,0);
     button_one.read();
     button_two.read();
     button_three.read();
     button_four.read();
     button_five.read();
+  FastLED.delay(80);
   }
+}
+//screen on
+void on(){
+  while(pattern_counter == 55){
+    for(int i = 0; i<num_led; i++) leds[i] = CRGB(255,136,255);
+    button_one.read();
+    button_two.read();
+    button_three.read();
+    button_four.read();
+    button_five.read();
   FastLED.delay(80);
   }
 }
