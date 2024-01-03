@@ -31,4 +31,8 @@ After testing both the code and circuit, the matrix and circuit was fitted into 
 
 ![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20240102_210540.jpg?raw=true)
 ![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20230824_134824.jpg?raw=true)
-![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20230824_134753.jpg?raw=true)
+![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20240102_220422.jpg?raw=true)
+![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20240102_220430.jpg?raw=true)
+![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20240102_220439.jpg?raw=true)
+![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20240102_220447.jpg?raw=true)
+![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20240102_220458.jpg?raw=true)
