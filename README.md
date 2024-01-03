@@ -27,7 +27,7 @@ In order to ensure a comfortable fit for the head, I’ve added a fitted helmet 
 
 ## The finished product
 
-After testing both the code and circuit, the matrix and circuit was fitted into the hollowed-out CRT TV shell. Later, an on/off button was added to the circuit for easier control.
+After testing both the code and circuit, the matrix and circuit was fitted into the hollowed-out CRT TV shell.
 
 ![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20240102_210540.jpg?raw=true)
 ![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20230824_134824.jpg?raw=true)
