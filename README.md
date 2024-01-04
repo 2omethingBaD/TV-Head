@@ -1,34 +1,29 @@
-# CRT TV Head
+# TV Head Costume
 
-Arduino code and circuit diagram for my tv head costume. This project registers button presses to cycle through animations that are then displayed on the LED matrix board. This project runs on a TISEKER Mini Nano V3.0 ATmega328P Microcontroller Board.
-
+## Overview
+This repository contains the Arduino code and circuit diagram for my TV head costume project. The costume features a LED matrix board that displays various animations controlled by button presses.
 ![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/cover.jpg?raw=true)
 
-## The circuit
-
-The circuit is powered by a 9V battery and features a single LED to indicate power, along with 5 buttons (meant one to be placed on each finger for easier control) that control the display.
-Recently However, Ive changed this setup to instead use 4 buttons that are now pressed using the 4 of the buttons on the front of the casing, a bigger button was also added to controll the overall power. 
-
+## Circuit Design
+### Initial Configuration
+The circuit is powered by a 9V battery and features a single LED to indicate power. It utilizes a TISEKER Mini Nano V3.0 ATmega328P Microcontroller Board for seamless operation. Originally, the setup featured five buttons, each intended for placement on individual fingers to facilitate easier control. However, recent modifications have streamlined the design to incorporate four front-facing buttons, complemented by a larger button for overall power control.
 ![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20230822_231721.jpg?raw=true)
 ![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20230823_185041.jpg?raw=true)
 ![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20240102_210024.jpg?raw=true)
 ![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20240102_210549.jpg?raw=true)
 
-
-The LED matrix was then made by cutting a pre-bought LED strip and soldering the points together.
-
+### LED Matrix Creation
+The LED matrix was crafted by cutting and soldering a pre-purchased LED strip to ensure a cohesive and visually appealing display.
 ![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20230811_180034.jpg?raw=true)
 
-## Costume fitting
-
-In order to ensure a comfortable fit for the head, I’ve added a fitted helmet to the inside of the TV casing, glued in with liquid nail and further supported by foam wherever needed.
-
+## Costume Assembly
+### Comfort Enhancements
+To guarantee a comfortable fit, a custom-fitted helmet was integrated into the TV casing. Liquid nail adhesive secured the helmet in place, further supported by strategically placed foam for added comfort.
 ![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20240102_210806.jpg?raw=true)
 
-## The finished product
-
-After testing both the code and circuit, the matrix and circuit was fitted into the hollowed-out CRT TV shell.
-
+## Final Display
+### Integration and Testing
+After successful testing of both the code and circuit, the LED matrix and associated circuitry were seamlessly fitted into the hollowed-out CRT TV shell, creating a visually striking and functional TV head costume.
 ![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20240102_210540.jpg?raw=true)
 ![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20230824_134824.jpg?raw=true)
 ![alt text](https://github.com/2omethingBaD/TV-Head/blob/main/img/20240102_220422.jpg?raw=true)
